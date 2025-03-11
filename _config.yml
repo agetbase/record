@@ -24,16 +24,16 @@ rouge:
 
 # About
 author:
-  name: developersung13
-  url: https://developersung13.com/
+  name: bunny-goorm
+  url: https://blog.developersung.com/
   email: developersung13
-  github: developersung13
+  github: bunny-goorm
   twitter: developersung
 
 # Custom vars
 version: 3.4.1
 github:
-  repo: https://github.com/developersung13/developersung13.github.io
+  repo: https://github.com/bunny-goorm/developersung-blog.git
 
 # Plugins
 plugins:
