@@ -8,7 +8,7 @@ description: Yeolam Sung, who is a fontend developer based in Seoul, South Korea
 
 <div class="intro-animation">
 <section class="explanation">
-    <p class="tag">@developersung13</p>
+    <p class="tag">@bunny</p>
     <h1 class="intro">
     성열암
     </h1>
