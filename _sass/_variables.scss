@@ -49,6 +49,10 @@ $custom-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 $monospaced-font: Menlo, Monaco, monospace;
 $code-color: #bf616a;
 
+* {
+  font-family: $source;
+}
+
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;
   -moz-box-sizing: $type;
