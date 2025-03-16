@@ -1,7 +1,7 @@
-fourth-place:
-  # - name: Freelancer
-  #   role: Frontend Software Engineer
-  #   date: 2022.3 - Present
+# fourth-place:
+# - name: Freelancer
+#   role: Frontend Software Engineer
+#   date: 2022.3 - Present
 # third-place:
 # - name: RIDI
 #   role: Digital Product Designer, Team Manager
@@ -13,9 +13,8 @@ fourth-place:
 #   date: 2014. MAR - 2015. NOV
 
 first-place:
-  - name: Freelancer
-    role: Frontend Software Engineer
-    date: 2022.3 - Present
-    skill_1: Next.js
-    skill_2: React
-    skill_3: TypeScript
+  - name: Goorm
+    role: Full stack Engineer
+    date: 2025.3 - Present
+    skill_1: React
+    skill_2: Node.js
