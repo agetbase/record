@@ -61,10 +61,6 @@
       margin-bottom: 6px;
       word-wrap: break-word;
       overflow-wrap: break-word;
-
-      @media (max-width: $break-small) {
-        font-size: 18px;
-      }
     }
 
     @media (max-width: $break-medium) {
@@ -72,25 +68,18 @@
       width: 100%;
     }
 
-    p.catalogue-introduce {
+    p.catalogue-subtitle {
       color: #6c7786;
       font-size: 15px;
       line-height: 1.75;
       margin-bottom: 17px;
-
-      @media (max-width: $break-small) {
-        font-size: 16px;
-      }
+      font-weight: 400;
     }
 
     p.catalogue-date {
       font-size: 13px;
-      color: #6c7786;
       line-height: 1.75;
-
-      @media (max-width: $break-small) {
-        font-size: 16px;
-      }
+      font-weight: 400;
     }
 
     p.catalogue-body {
