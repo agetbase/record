@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Docker가 macOS에서 실행되지 않을 때'
-introduce: 'macOS에서 Docker Desktop 실행이 갑자기 멈췄을 때, 직접 실행 파일로 문제를 해결했던 경험을 소개합니다. 간단한 해결책으로 Docker를 다시 정상적으로 사용할 수 있었던 과정을 함께 알아보세요!'
+subtitle: 'macOS에서 Docker Desktop 실행이 갑자기 멈췄을 때, 직접 실행 파일로 문제를 해결했던 경험을 소개합니다. 간단한 해결책으로 Docker를 다시 정상적으로 사용할 수 있었던 과정을 함께 알아보세요!'
 date: '2024년 8월 14일'
 blog: true
 text: true
