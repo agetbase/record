@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Next.js Google에 등록하기'
-introduce: 'Next.js로 만든 프로젝트를 어떻게 Google 검색에 노출시켰을까요? Google Search Console과 사이트맵 설정을 통해 세상에 내 프로젝트를 알린 과정을 공유합니다.'
+subtitle: 'Next.js로 만든 프로젝트를 어떻게 Google 검색에 노출시켰을까요? Google Search Console과 사이트맵 설정을 통해 세상에 내 프로젝트를 알린 과정을 공유합니다.'
 date: '2025년 1월 15일'
 blog: true
 text: true
