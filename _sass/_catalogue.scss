@@ -1,3 +1,5 @@
+// Blog 포스트 리스트 페이지 본문에 대한 SCSS 파일
+
 .catalogue {
   &-item {
     border-bottom: 1px solid rgba(0, 0, 0, 0.07);
@@ -61,6 +63,10 @@
       margin-bottom: 6px;
       word-wrap: break-word;
       overflow-wrap: break-word;
+
+      @media (max-width: $break-small) {
+        font-size: 16px;
+      }
     }
 
     @media (max-width: $break-medium) {
@@ -69,14 +75,19 @@
     }
 
     p.catalogue-subtitle {
-      color: #6c7786;
+      color: #4e5968;
       font-size: 15px;
       line-height: 1.75;
       margin-bottom: 17px;
       font-weight: 400;
+
+      @media (max-width: $break-small) {
+        font-size: 13px;
+      }
     }
 
     p.catalogue-date {
+      color: #4e5968;
       font-size: 13px;
       line-height: 1.75;
       font-weight: 400;
