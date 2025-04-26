@@ -29,7 +29,11 @@ pre code {
   border-radius: 8px; // 테두리 둥글게
   line-height: 1.6; // 가독성을 위한 줄 간격
   margin: 0 0 1rem;
-  padding: 0.25rem;
+  padding: 0.5rem;
+
+  .rouge-gutter {
+    display: none;
+  }
 
   pre {
     margin-bottom: 0;
@@ -38,7 +42,7 @@ pre code {
 
   .lineno {
     color: #b0b9c3; // GitHub 스타일 라인 번호 색상
-    display: inline-block;
+    display: none;
     padding: 0 0.75rem 0 0.25rem;
     -webkit-user-select: none; // 선택 불가
     -moz-user-select: none;
