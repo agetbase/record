@@ -36,7 +36,7 @@ pre code {
   }
 
   pre {
-    margin-bottom: 0;
+    margin: 0;
     overflow-x: auto; // 가로 스크롤 활성화
   }
 
@@ -47,5 +47,13 @@ pre code {
     -webkit-user-select: none; // 선택 불가
     -moz-user-select: none;
     user-select: none;
+  }
+
+  table {
+    margin-bottom: 0 !important;
+  }
+
+  td {
+    border: none !important;
   }
 }
