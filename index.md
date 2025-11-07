@@ -1,6 +1,6 @@
 ---
 layout: default
-title: '개발농부 성열암 블로그'
+title: "개발농부 성열암 블로그"
 main: true
 subtitle: Frontend developersung Yeolam Sung
 description: Yeolam Sung, who is a fontend developer based in Seoul, South Korea. | '성열암' 프론트엔드 개발자입니다.
@@ -8,7 +8,7 @@ description: Yeolam Sung, who is a fontend developer based in Seoul, South Korea
 
 <div class="intro-animation">
 <section class="explanation">
-    <p class="tag">@bunny</p>
+    <p class="tag">@agetbase</p>
     <h1 class="intro">
     성열암
     </h1>

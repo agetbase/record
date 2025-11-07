@@ -3,8 +3,8 @@ permalink: /:year-:month-:day/:title
 
 # Setup
 title: Yeolam Sung
-baseurl: ''
-url: 'https://blog.developersung.com'
+baseurl: ""
+url: "https://blog.developersung.com"
 
 # Assets
 sass:
@@ -24,16 +24,16 @@ rouge:
 
 # About
 author:
-  name: bunny-goorm
+  name: agetbase
   url: https://blog.developersung.com/
   email: developersung13
-  github: bunny-goorm
+  github: agetbase
   twitter: developersung
 
 # Custom vars
 version: 3.4.1
 github:
-  repo: https://github.com/bunny-goorm/developersung-blog.git
+  repo: https://github.com/agetbase/history.git
 
 # Plugins
 plugins:
