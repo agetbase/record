@@ -11,7 +11,7 @@
   }
 
   &-platform {
-    color: $orange;
+    color: $primary;
     font-size: 17px;
     font-family: $source;
     font-weight: 600;
@@ -37,7 +37,8 @@
       font-size: 13px;
       font-weight: 800;
       margin-bottom: 10px;
-      background-color: $yellow;
+      background-color: #e8f3ff;
+      color: #3182f6;
       border-radius: 8px;
 
       @media (max-width: $break-medium) {
@@ -129,8 +130,8 @@
       }
 
       .major-skill {
-        color: $orange;
-        border: 1px solid $orange;
+        color: $primary;
+        border: 1px solid $primary;
       }
     }
   }

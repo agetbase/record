@@ -1,15 +1,14 @@
 ---
 layout: post
-title: 'SQLD 취득까지'
-subtitle: '5년 만에 다시 도전한 SQLD 자격증! 첫 시험의 실패를 극복하고, 실전 문제집과 데이터베이스 학습 경험을 통해 합격한 과정을 공유합니다. 공부 팁과 실전 전략을 함께 알아보세요!'
-date: '2023년 12월 22일'
+title: "SQLD 취득까지"
+subtitle: "5년 만에 다시 도전한 SQLD 자격증! 첫 시험의 실패를 극복하고, 실전 문제집과 데이터베이스 학습 경험을 통해 합격한 과정을 공유합니다. 공부 팁과 실전 전략을 함께 알아보세요!"
+date: "2023년 12월 22일"
 blog: true
 text: true
-author: 'Yeolam Sung'
+author: "Yeolam Sung"
 post-header: true
-post-footer: true
-intro-img: 'sqld-retrospection/img/books.png'
-header-img: 'img/books.png'
+intro-img: "sqld-retrospection/img/books.png"
+header-img: "img/books.png"
 comments: true
 order: 1
 ---

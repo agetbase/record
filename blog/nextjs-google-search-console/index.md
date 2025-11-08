@@ -1,15 +1,14 @@
 ---
 layout: post
-title: 'Next.js Google에 등록하기'
-subtitle: 'Next.js로 만든 프로젝트를 어떻게 Google 검색에 노출시켰을까요? Google Search Console과 사이트맵 설정을 통해 세상에 내 프로젝트를 알린 과정을 공유합니다.'
-date: '2025년 1월 15일'
+title: "Next.js Google에 등록하기"
+subtitle: "Next.js로 만든 프로젝트를 어떻게 Google 검색에 노출시켰을까요? Google Search Console과 사이트맵 설정을 통해 세상에 내 프로젝트를 알린 과정을 공유합니다."
+date: "2025년 1월 15일"
 blog: true
 text: true
-author: 'Yeolam Sung'
+author: "Yeolam Sung"
 post-header: true
-post-footer: true
-intro-img: 'nextjs-google-search-console/img/magnifier.png'
-header-img: 'img/magnifier.png'
+intro-img: "nextjs-google-search-console/img/magnifier.png"
+header-img: "img/magnifier.png"
 comments: true
 order: 5
 ---
@@ -47,16 +46,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <head>
-        <link rel='icon' href='/images/cube-logo.png' />
+        <link rel="icon" href="/images/cube-logo.png" />
         /* 이곳에 붙여넣기 */
         <meta
-          name='google-site-verification'
-          content='isENqoS-vEJn7rno17EZWfhCbHez5XsiJAMitll0aE4'
+          name="google-site-verification"
+          content="isENqoS-vEJn7rno17EZWfhCbHez5XsiJAMitll0aE4"
         />
       </head>
-      <body className='text-sm'>...</body>
+      <body className="text-sm">...</body>
     </html>
   );
 }
@@ -73,31 +72,31 @@ export default function RootLayout({
 
 ```tsx
 export const metadata = {
-  title: '서비스명',
-  description: '이 서비스는 ~~~~~~를 목표로 합니다',
-  keywords: ['example', '성열암', '블로그', '성열암 블로그', '개발 블로그'],
-  authors: [{ name: '성열암', url: 'https://example.vercel.com/' }],
+  title: "서비스명",
+  description: "이 서비스는 ~~~~~~를 목표로 합니다",
+  keywords: ["example", "성열암", "블로그", "성열암 블로그", "개발 블로그"],
+  authors: [{ name: "성열암", url: "https://example.vercel.com/" }],
   openGraph: {
-    title: '서비스명 - 성열암',
-    description: '이 서비스는 ~~~~~~를 목표로 합니다',
-    url: 'https://example.vercel.com/',
-    siteName: 'Example',
+    title: "서비스명 - 성열암",
+    description: "이 서비스는 ~~~~~~를 목표로 합니다",
+    url: "https://example.vercel.com/",
+    siteName: "Example",
     images: [
       {
-        url: 'https://example/images/cube-logo.png',
+        url: "https://example/images/cube-logo.png",
         width: 800,
         height: 600,
-        alt: '서비스 로고',
+        alt: "서비스 로고",
       },
     ],
-    locale: 'ko_KR',
-    type: 'website',
+    locale: "ko_KR",
+    type: "website",
   },
   verification: {
     /* google의 value로써 복사했던 meta 태그 내 content 속성 값을 이곳에 붙여넣기 */
-    google: 'is~~~~~~~~~~~여기에 붙여넣기~~~~~~~~~~~~~~',
+    google: "is~~~~~~~~~~~여기에 붙여넣기~~~~~~~~~~~~~~",
     other: {
-      'naver-site-verification': 'naver search advisor 인증 코드 입력란',
+      "naver-site-verification": "naver search advisor 인증 코드 입력란",
     },
   },
 };
@@ -129,13 +128,13 @@ const config = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL, // 사이트의 기본 URL
   generateRobotsTxt: true, // robots.txt 파일 생성 여부
   sitemapSize: 7000, // 각 sitemap의 최대 URL 수
-  changefreq: 'daily', // 검색 엔진에 대한 URL 업데이트 빈도
+  changefreq: "daily", // 검색 엔진에 대한 URL 업데이트 빈도
   priority: 0.7, // 기본 URL 우선 순위
   // exclude는 sitemap.xml 생성 시 제외할 URL를 포함 (e.g., private page)
   exclude: [
-    '*/register*', // 'register'가 포함된 모든 경로 제외
-    '*/edit*', // 'edit'이 포함된 모든 경로 제외
-    '*/mypage*', // 'mypage'이 포함된 모든 경로 제외
+    "*/register*", // 'register'가 포함된 모든 경로 제외
+    "*/edit*", // 'edit'이 포함된 모든 경로 제외
+    "*/mypage*", // 'mypage'이 포함된 모든 경로 제외
   ],
 };
 

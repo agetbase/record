@@ -1,14 +1,14 @@
 :root {
   color: #333d4b;
-  font-family: 'Toss Product Sans', -apple-system, BlinkMacSystemFont,
-    'Apple SD Gothic Neo', Pretendard, Roboto, 'Noto Sans KR', 'Segoe UI',
-    'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    sans-serif, 'Source Sans Pro', sans-serif;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Toss Product Sans", -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif, "Source Sans Pro", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   -webkit-font-smoothing: antialiased;
-  -webkit-locale: 'ko';
+  -webkit-locale: "ko";
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -88,18 +88,18 @@ td {
   transition: all 0.3s ease-in-out;
 }
 
-::selection {
-  background: $orange;
-  color: #fff;
-  text-shadow: none;
-}
-::-moz-selection {
-  background: $orange;
-  color: #fff;
-  text-shadow: none;
-}
-::-webkit-selection {
-  background: $orange;
-  color: #fff;
-  text-shadow: none;
-}
+// ::selection {
+//   background: $primary;
+//   color: #fff;
+//   text-shadow: none;
+// }
+// ::-moz-selection {
+//   background: $primary;
+//   color: #fff;
+//   text-shadow: none;
+// }
+// ::-webkit-selection {
+//   background: $primary;
+//   color: #fff;
+//   text-shadow: none;
+// }

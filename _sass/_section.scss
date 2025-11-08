@@ -8,7 +8,7 @@ section.explanation {
   padding-top: 40px;
 
   .tag {
-    color: $orange;
+    color: $primary;
   }
 
   .descTag {
@@ -61,7 +61,7 @@ section.explanation {
 
   .intro-link:hover a {
     cursor: pointer;
-    color: $orange;
+    color: $primary;
 
     @media (max-width: $break-small) {
       color: $grey-0;
@@ -77,8 +77,8 @@ section.explanation {
   }
 
   .underline-mask {
-    content: '';
-    background-color: $orange;
+    content: "";
+    background-color: $primary;
     transform: scaleX(0);
     //        transform-origin: 0% 0%;
     transition: transform 300ms ease-in-out;

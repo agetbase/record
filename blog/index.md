@@ -1,6 +1,7 @@
 ---
 layout: default
-title: 'Blog, 열암이의 일상 블로그'
+# title: 'Blog, 열암이의 일상 블로그'
+title: "Record"
 main: true
 ---
 

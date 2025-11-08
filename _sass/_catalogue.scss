@@ -14,7 +14,7 @@
   }
 
   &-type {
-    color: $orange;
+    color: $primary;
     font-size: 18px;
     font-family: $source;
     font-weight: 600;
@@ -43,9 +43,10 @@
       letter-spacing: 0.03em;
       padding: 4px 7px;
       font-size: 13px;
-      font-weight: 800;
+      font-weight: bold;
       margin-bottom: 10px;
-      background-color: $yellow;
+      background-color: #e8f3ff;
+      color: #3182f6;
       border-radius: 8px;
 
       @media (max-width: $break-medium) {
@@ -124,7 +125,7 @@
 }
 
 .catalogue-item:hover .catalogue-title {
-  color: $orange;
+  color: $primary;
 }
 
 .catalogue-item:hover img {

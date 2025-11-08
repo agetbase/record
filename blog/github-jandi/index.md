@@ -1,15 +1,14 @@
 ---
 layout: post
-title: '깃헙 잔디색은 바뀐다는 사실을 알고 있는가?'
-subtitle: '깃헙 잔디밭을 1년간 가꾸며 알게 된 잔디 색 변화의 순간들! 잔디 심기의 다양한 방법과 할로윈, 크리스마스 시즌에 변화하는 깃헙 잔디 색상에 대해 기록한 이야기를 공유합니다. '
-date: '2023년 12월 25일'
+title: "깃헙 잔디색은 바뀐다는 사실을 알고 있는가?"
+subtitle: "깃헙 잔디밭을 1년간 가꾸며 알게 된 잔디 색 변화의 순간들! 잔디 심기의 다양한 방법과 할로윈, 크리스마스 시즌에 변화하는 깃헙 잔디 색상에 대해 기록한 이야기를 공유합니다. "
+date: "2023년 12월 25일"
 blog: true
 text: true
-author: 'Yeolam Sung'
+author: "Yeolam Sung"
 post-header: true
-post-footer: true
-intro-img: 'github-jandi/img/seeding.png'
-header-img: 'img/seeding.png'
+intro-img: "github-jandi/img/seeding.png"
+header-img: "img/seeding.png"
 comments: true
 order: 2
 ---

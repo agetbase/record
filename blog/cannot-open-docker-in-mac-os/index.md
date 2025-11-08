@@ -1,15 +1,14 @@
 ---
 layout: post
-title: 'Docker가 macOS에서 실행되지 않을 때'
-subtitle: 'macOS에서 Docker Desktop 실행이 갑자기 멈췄을 때, 직접 실행 파일로 문제를 해결했던 경험을 소개합니다. 간단한 해결책으로 Docker를 다시 정상적으로 사용할 수 있었던 과정을 함께 알아보세요!'
-date: '2024년 8월 14일'
+title: "Docker가 macOS에서 실행되지 않을 때"
+subtitle: "macOS에서 Docker Desktop 실행이 갑자기 멈췄을 때, 직접 실행 파일로 문제를 해결했던 경험을 소개합니다. 간단한 해결책으로 Docker를 다시 정상적으로 사용할 수 있었던 과정을 함께 알아보세요!"
+date: "2024년 8월 14일"
 blog: true
 text: true
-author: 'Yeolam Sung'
+author: "Yeolam Sung"
 post-header: true
-post-footer: true
-intro-img: 'cannot-open-docker-in-mac-os/img/whale.png'
-header-img: 'img/whale.png'
+intro-img: "cannot-open-docker-in-mac-os/img/whale.png"
+header-img: "img/whale.png"
 comments: true
 order: 4
 ---
@@ -52,17 +51,17 @@ order: 4
 
    > 필자는 시스템 언어가 `영어`로 설정되어 있기에 `한글`에서는 다르게 표시될 수 있을 것 같다.
 
-![show package contents](img/3.png){: width="600"}
+   ![show package contents](img/3.png){: width="600"}
 
-<br />
+   <br />
 
 2. `Show Package Contents` 버튼을 클릭하여 열린 `Finder` 경로에서 `Contents` → `MacOs` → `Docker` 실행 파일을 확인 후, 이를 실행해 보면 하단과 같이 정상적으로 프로그램이 실행되는 것을 확인할 수 있다.
 
-![Docker 실행 파일 실행](img/4.png){: width="600"}
+   ![Docker 실행 파일 실행](img/4.png){: width="600"}
 
-![Docker 실행 완료](img/5.png){: width="600"}
+   ![Docker 실행 완료](img/5.png){: width="600"}
 
-<br/>
+   <br/>
 
 결과적으로, 위 방법 또한 매번 해당 경로까지 이동하여 `Docker` 실행 파일을 실행하는 것은 비효율적이므로 바탕화면에 `바로가기` 아이콘으로 두는 것이 좋을 것 같다.
 

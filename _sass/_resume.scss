@@ -3,7 +3,7 @@
   font-family: $source;
   font-size: 18px;
   font-weight: 600;
-  color: $orange;
+  color: $primary;
   vertical-align: middle;
 
   .label-emoji {
@@ -16,7 +16,7 @@ div.resume-info {
 
   svg {
     width: 24px;
-    fill: $orange;
+    fill: $primary;
     position: absolute;
   }
 }
@@ -58,7 +58,7 @@ div.resume-info {
         span {
           font-size: 15px;
           font-weight: 400;
-          color: $orange;
+          color: $primary;
         }
       }
     }
@@ -103,7 +103,7 @@ div.resume-info {
 section.skill {
   svg {
     width: 24px;
-    fill: $orange;
+    fill: $primary;
     position: absolute;
   }
 
@@ -119,8 +119,8 @@ section.skill {
 
   li.skill_name:nth-child(1),
   li.skill_name:nth-child(2) {
-    color: $orange;
-    border: 1px solid $orange;
+    color: $primary;
+    border: 1px solid $primary;
   }
 }
 

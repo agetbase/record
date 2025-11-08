@@ -36,7 +36,7 @@
     sup {
       a.footnote {
         background: none;
-        color: $orange;
+        color: $primary;
       }
     }
     img {
@@ -51,12 +51,12 @@
     background-repeat: no-repeat, no-repeat, repeat-x;
     background-size: 2px 1px, 2px 1px, 1px 1px;
     background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff),
-      linear-gradient($orange, $orange);
+      linear-gradient($primary, $primary);
   }
 
   a:hover {
-    color: $orange;
-    text-decoration-color: $orange;
+    color: $primary;
+    text-decoration-color: $primary;
   }
 
   a.book-link {
@@ -207,7 +207,7 @@
     li {
       padding: 6px 0;
       margin-left: 8px;
-      color: red;
+      // color: red;
     }
   }
 
@@ -222,7 +222,7 @@
     }
 
     li:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 8px;
       height: 8px;
@@ -249,11 +249,11 @@
     margin: 50px 0;
     width: 100%;
     padding: 32px 0;
-    border: 1px solid $grey-2;
     border-radius: 6px;
     font-size: 16px;
-    color: $grey-0;
+    color: #6b7684;
     font-weight: 500;
+    background-color: #f6f7f9;
 
     @media (max-width: $break-small) {
       font-size: 15px;
@@ -261,7 +261,7 @@
 
     h1 {
       font-family: $source;
-      color: $orange;
+      color: $primary;
       padding-bottom: 7px;
       font-size: 17px;
 
@@ -275,12 +275,12 @@
 sup {
   a.footnote {
     background: none;
-    color: $orange;
+    color: $primary;
   }
 }
 
 .post-type {
-  color: $orange;
+  color: $primary;
   font-size: 18px;
   font-family: $source;
   font-weight: 600;
@@ -340,10 +340,10 @@ sup {
   text-transform: uppercase;
   padding: 4px 7px;
   font-size: 13px;
-  font-weight: 800;
-  background-color: $yellow;
+  font-weight: bold;
+  background-color: #e8f3ff;
+  color: #3182f6;
   border-radius: 8px;
-  color: #000;
   margin-bottom: 10px;
 
   @media (max-width: $break-medium) {
@@ -365,7 +365,7 @@ sup {
       margin: 0;
       a.reversefootnote {
         background: none;
-        color: $orange;
+        color: $primary;
       }
       a:hover {
         opacity: 0.6;
@@ -464,7 +464,7 @@ sup {
     }
 
     .id {
-      color: $orange;
+      color: $primary;
       font-size: 0.8em;
       font-family: $source;
       font-weight: 500;

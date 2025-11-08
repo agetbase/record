@@ -4,7 +4,7 @@ permalink: /:year-:month-:day/:title
 # Setup
 title: Yeolam Sung
 baseurl: ""
-url: "https://blog.developersung.com"
+url: "https://agetbase.com"
 
 # Assets
 sass:
@@ -25,15 +25,15 @@ rouge:
 # About
 author:
   name: agetbase
-  url: https://blog.developersung.com/
-  email: developersung13
+  url: https://agetbase.com/
+  email: agetbase
   github: agetbase
-  twitter: developersung
+  twitter: agetbase
 
 # Custom vars
 version: 3.4.1
 github:
-  repo: https://github.com/agetbase/history.git
+  repo: https://github.com/agetbase/record.git
 
 # Plugins
 plugins:

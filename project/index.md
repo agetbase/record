@@ -2,7 +2,8 @@
 layout: default
 work: true
 main: true
-title: Project, 개발에 참여한 프로젝트
+# title: Project, 개발에 참여한 프로젝트
+title: Record
 ---
 
 <div class="project">
