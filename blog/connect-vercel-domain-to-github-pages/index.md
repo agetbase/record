@@ -10,7 +10,6 @@ post-header: true
 intro-img: "connect-vercel-domain-to-github-pages/img/link.png"
 header-img: "img/link.png"
 comments: true
-draft: true
 order: 6
 ---
 
