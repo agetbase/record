@@ -1,5 +1,6 @@
 @import url("https://static.toss.im/tps/main.css");
 @import url("https://static.toss.im/tps/others.css");
+@import url("https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css");
 
 //initialize
 
@@ -11,7 +12,7 @@ h2 {
 // color 정의
 $default-shade: #10171f;
 $default-tint: #8898aa;
-$grey-0: #333e4c;
+$grey-0: #333d4b;
 $grey-0-80: rgba(51, 62, 76, 0.8);
 $grey-1: #90949a;
 $grey-2: #d8e0e7;
@@ -27,7 +28,7 @@ $ridi-skyblue: #66baff;
 $orange: #f94a29;
 $purple: #8942f4;
 $light-purple: #997efa;
-$primary: #333e4c;
+$primary: #333d4b;
 
 // media
 $break-large: 1200px;
@@ -39,7 +40,7 @@ $break-small: 670px;
 
 // font-family 정의
 $serif: "Nanum Myeongjo", sans-serif;
-$source: "Toss Product Sans", -apple-system, BlinkMacSystemFont,
+$source: "Toss Product Sans", "Tossface", -apple-system, BlinkMacSystemFont,
   "Apple SD Gothic Neo", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
   "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
   sans-serif, "Source Sans Pro", sans-serif;
