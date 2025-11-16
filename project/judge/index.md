@@ -1,7 +1,7 @@
 ---
 author: 'Yeolam Sung'
 title: 'Judge'
-link: 'https://swjudge.cbnu.ac.kr/'
+# link: 'https://swjudge.cbnu.ac.kr/'
 subtitle: '충북 도내 대학 재학생들을 위해 개발된 OJ(Online Judge) 플랫폼'
 type: 'Web'
 projects: true
