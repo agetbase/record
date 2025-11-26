@@ -1,59 +1,59 @@
-pre,
-code {
-  font-family: $monospaced-font; // 모노스페이스 폰트
-}
+// pre,
+// code {
+//   font-family: $monospaced-font; // 모노스페이스 폰트
+// }
 
-code {
-  background-color: rgba(129, 139, 152, 0.12); // GitHub 스타일 배경색
-  border-radius: 4px; // 약간 둥근 모서리
-  color: #24292e; // 기본 텍스트 색상
-  font-size: 85%; // 약간 작은 폰트 크기
-  font-weight: 500;
-  padding: 0.2em 0.4em; // 안쪽 여백
-}
+// code {
+//   background-color: rgba(129, 139, 152, 0.12); // GitHub 스타일 배경색
+//   border-radius: 4px; // 약간 둥근 모서리
+//   color: #24292e; // 기본 텍스트 색상
+//   font-size: 85%; // 약간 작은 폰트 크기
+//   font-weight: 500;
+//   padding: 0.2em 0.4em; // 안쪽 여백
+// }
 
-pre {
-  margin: 0 0 1rem;
-}
+// pre {
+//   margin: 0 0 1rem;
+// }
 
-pre code {
-  background-color: rgba(129, 139, 152, 0.12); // pre 내부에서 투명 처리
-  color: inherit;
-  font-size: 100%; // 기본 폰트 크기
-  padding: 0;
-  font-size: 16px; // 가독성을 위한 크기
-}
+// pre code {
+//   background-color: rgba(129, 139, 152, 0.12); // pre 내부에서 투명 처리
+//   color: inherit;
+//   font-size: 100%; // 기본 폰트 크기
+//   padding: 0;
+//   font-size: 16px; // 가독성을 위한 크기
+// }
 
-.highlight {
-  background-color: #f6f8fa !important; // GitHub 배경색
-  border-radius: 8px; // 테두리 둥글게
-  line-height: 1.6; // 가독성을 위한 줄 간격
-  margin: 0 0 1rem;
-  padding: 0.5rem;
+// .highlight {
+//   background-color: #f6f8fa !important; // GitHub 배경색
+//   border-radius: 8px; // 테두리 둥글게
+//   line-height: 1.6; // 가독성을 위한 줄 간격
+//   margin: 0 0 1rem;
+//   padding: 0.5rem;
 
-  .rouge-gutter {
-    display: none;
-  }
+//   .rouge-gutter {
+//     display: none;
+//   }
 
-  pre {
-    margin: 0;
-    overflow-x: auto; // 가로 스크롤 활성화
-  }
+//   pre {
+//     margin: 0;
+//     overflow-x: auto; // 가로 스크롤 활성화
+//   }
 
-  .lineno {
-    color: #b0b9c3; // GitHub 스타일 라인 번호 색상
-    display: none;
-    padding: 0 0.75rem 0 0.25rem;
-    -webkit-user-select: none; // 선택 불가
-    -moz-user-select: none;
-    user-select: none;
-  }
+//   .lineno {
+//     color: #b0b9c3; // GitHub 스타일 라인 번호 색상
+//     display: none;
+//     padding: 0 0.75rem 0 0.25rem;
+//     -webkit-user-select: none; // 선택 불가
+//     -moz-user-select: none;
+//     user-select: none;
+//   }
 
-  table {
-    margin-bottom: 0 !important;
-  }
+//   table {
+//     margin-bottom: 0 !important;
+//   }
 
-  td {
-    border: none !important;
-  }
-}
+//   td {
+//     border: none !important;
+//   }
+// }
