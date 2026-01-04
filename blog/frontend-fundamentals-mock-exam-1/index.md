@@ -10,7 +10,7 @@ post-header: true
 intro-img: "frontend-fundamentals-mock-exam-1/img/frontend-fundamental.png"
 header-img: "img/frontend-fundamental.png"
 comments: true
-order: 8
+order: 7
 ---
 
 평소 기능 구현에 급급해 코드의 냄새를 고려하지 못한 형태의 작업물들을 많이 생산해 왔다.

@@ -176,11 +176,11 @@
     border-top: 1px solid #d0d7de;
 
     &:first-child > td {
-      font-weight: bold;
+      // font-weight: bold;
       background-color: $white;
     }
 
-    &:nth-child(2n + 1) {
+    &:nth-child(2n) {
       background-color: #f6f8fa;
     }
   }
@@ -197,7 +197,7 @@
   th {
     font-weight: 600;
     color: #1f2328;
-    background-color: inherit;
+    background-color: white;
   }
 
   strong {
@@ -235,6 +235,10 @@
       padding: 6px 0;
       margin-left: 8px;
       // color: red;
+
+      p {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -246,6 +250,10 @@
       line-height: 1.65;
       position: relative;
       font-size: 17px;
+    }
+
+    p {
+      margin-bottom: 0;
     }
 
     li:before {
