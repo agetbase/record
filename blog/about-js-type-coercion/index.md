@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JavaScript의 Type coercion"
-subtitle: ""
+subtitle: "== 대신 ===을 사용하는 이유, 제대로 알고 계신가요? 타입 변환 과정과 예측 가능한 코드 작성법을 공유합니다."
 date: "2026년 1월 3일"
 blog: true
 text: true
