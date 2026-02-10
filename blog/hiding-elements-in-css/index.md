@@ -2,7 +2,7 @@
 layout: post
 title: "visibility, display, opacity CSS 속성의 성능 차이"
 subtitle: "CSS에서 요소를 숨기는 방법은 다양한데요. 성능적인 측면에서 각 속성이 가지는 장단점과, 언제 어떤 속성의 사용이 적절한지 실험해 본 내용을 공유합니다."
-date: "2025년 1월 19일"
+date: "2025년 2월 10일"
 blog: true
 text: true
 author: "Yeolam Sung"
