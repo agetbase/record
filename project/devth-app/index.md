@@ -14,8 +14,8 @@ experiences:
   [
     '키보드 키 입력 감지 커스텀 훅 추가',
     '데이터 패칭 지연 대응을 위한 스피너 버튼 공통 컴포넌트 추가',
-    '제품의 코드 품질 보장을 위한 git pre-commit hook 설정 추가',
-    '의존성 동기화 검증 CI 워크플로우 추가',
+    '코드 검증 자동화 git pre-commit hook 추가',
+    '시험 옵션 설정 어드민 UI 작업',
   ]
 major-skills: ['Electron.js', 'React.js', 'TypeScript']
 minor-skills: ['TankStack Query']
