@@ -195,5 +195,9 @@ export default function App() {
 
 따라서 요소를 단순히 숨기기 위한 목적이라면, `visibility`, `opacity`, `transform`을 사용하는 것이 렌더링 성능 측면에서 조금 더 유리할 수 있다. 동기적으로 숨김 처리가 필요한 상황이라면, `Layout`을 발생시키지 않는 이러한 방식이 더욱 유리해질 것이다. 다만 실제 UI 구현에서는 **성능뿐 아니라 인터랙션, 접근성(A11y), 레이아웃 안정성**까지 함께 고려하여 기능 요구사항에 맞는 속성을 선택하는 것이 중요하다.
 
-- [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/opacity#description)
-- [Stacking context](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Positioned_layout/Stacking_context)
+<br />
+
+### 참조
+
+- [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/opacity#description){:target="\_blank"}
+- [Stacking context](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Positioned_layout/Stacking_context){:target="\_blank"}
