@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Frontend Fundamentals 모의고사 제 1회 후기"
-subtitle: "토스 채용 프로세스에서 진행했던 과제에 참여하고, 해설을 통해 얻었던 인사이트를 기록합니다."
-date: "2025년 11월 26일"
+title: 'Frontend Fundamentals 모의고사 제 1회 후기'
+subtitle: '토스 채용 프로세스에서 진행했던 과제에 참여하고, 해설을 통해 얻었던 인사이트를 기록합니다.'
+date: '2025년 11월 26일'
 blog: true
 text: true
-author: "Yeolam Sung"
+author: 'Yeolam Sung'
 post-header: true
-intro-img: "frontend-fundamentals-mock-exam-1/img/frontend-fundamental.png"
-header-img: "img/frontend-fundamental.png"
+intro-img: 'frontend-fundamentals-mock-exam-1/img/frontend-fundamental.png'
+header-img: 'img/frontend-fundamental.png'
 comments: true
 order: 7
 ---
@@ -31,7 +31,7 @@ order: 7
 
 시험 종료 후, GitHub Discussions에서는 다양한 토론들이 진행되었다. 폴더 구조(DDD/FSD)에 대한 고찰, `React.Suspense` 사용이 필요한지 등.
 
-이에 대한, 다양한 참여자분들의 의견들을 보고 생각보다 비슷한 고민을 하고 있는 개발자가 많다는 것을 알게 되었다. 이 부분은 [재협 님](https://www.linkedin.com/in/jbee37142/)과, [종택 님](https://www.linkedin.com/in/jong-taek-oh-8b29901a7/?originalSubdomain=kr)께서 진행해 주신 모의고사 실시간 해설 강의를 통해 해소해 주셨다.
+이에 대한, 다양한 참여자분들의 의견들을 보고 생각보다 비슷한 고민을 하고 있는 개발자가 많다는 것을 알게 되었다. 이 부분은 [재엽 님](https://www.linkedin.com/in/jbee37142/)과, [종택 님](https://www.linkedin.com/in/jong-taek-oh-8b29901a7/?originalSubdomain=kr)께서 진행해 주신 모의고사 실시간 해설 강의를 통해 해소해 주셨다.
 
 이번 시험에서 중요하게 고려해야 했던 부분은 세부 도메인에 대한 기능 구현의 집중보단 어떻게 해야, **직관적이고, 장기적으로 관리하기 좋은 코드를 설계할 수 있을지 고민하여 풀어내는** 것이었다.
 
