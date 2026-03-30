@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Frontend Fundamentals 모의고사 제 2회 후기"
-subtitle: "토스 채용 프로세스에서 진행했던 과제에 참여하고, 해설을 통해 얻었던 인사이트를 기록합니다."
-date: "2026년 3월 29일"
+title: 'Frontend Fundamentals 모의고사 제 2회 후기'
+subtitle: '읽는 순간 머리가 덜 굴러가게 만드는 예측 가능한 코드. 이 기준을 2회 모의고사 경험과 함께 되새깁니다.'
+date: '2026년 3월 29일'
 blog: true
 text: true
-author: "Yeolam Sung"
+author: 'Yeolam Sung'
 post-header: true
-intro-img: "frontend-fundamentals-mock-exam-1/img/frontend-fundamental.png"
-header-img: "img/frontend-fundamental.png"
+intro-img: 'frontend-fundamentals-mock-exam-1/img/frontend-fundamental.png'
+header-img: 'img/frontend-fundamental.png'
 comments: true
 order: 10
 ---
