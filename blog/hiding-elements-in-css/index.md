@@ -5,7 +5,7 @@ subtitle: 'CSS에서 요소를 숨기는 방법은 다양한데요. 성능적인
 date: '2025년 3월 8일'
 blog: true
 text: true
-author: 'Yeolam Sung'
+author: 'Gyung Sung'
 post-header: true
 intro-img: 'hiding-elements-in-css/img/hiding-eyes.png'
 header-img: 'img/hiding-eyes.png'

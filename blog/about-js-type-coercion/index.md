@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "JavaScript의 Type coercion"
-subtitle: "== 대신 ===을 사용하는 이유, 제대로 알고 계신가요? 타입 변환 과정과 예측 가능한 코드 작성법을 공유합니다."
-date: "2026년 1월 3일"
+title: 'JavaScript의 Type coercion'
+subtitle: '== 대신 ===을 사용하는 이유, 제대로 알고 계신가요? 타입 변환 과정과 예측 가능한 코드 작성법을 공유합니다.'
+date: '2026년 1월 3일'
 blog: true
 text: true
-author: "Yeolam Sung"
+author: 'Gyung Sung'
 post-header: true
-intro-img: "about-js-type-coercion/img/change.png"
-header-img: "img/change.png"
+intro-img: 'about-js-type-coercion/img/change.png'
+header-img: 'img/change.png'
 comments: true
 order: 8
 ---
@@ -23,9 +23,9 @@ JavaScript에는 크게 2가지 타입 변환 방식이 존재한다.
 **`명시적 타입 변환`**의 경우, 하단의 코드 예시와 같이 Global Object의 `Number`, `JSON.stringify` 함수 또는 메서드의 인자로 전달하는 개발자의 의도가 분명히 드러나는 방식이다.
 
 ```js
-Number("123"); // 123
-parseInt("123"); // 123
-parseFloat("123.45"); // 123.45
+Number('123'); // 123
+parseInt('123'); // 123
+parseFloat('123.45'); // 123.45
 
 String(123); // 123
 
@@ -35,10 +35,10 @@ JSON.stringify(123);
 반면에 **`암묵적 타입 변환`**의 경우, 하단의 코드 예시와 같이 JavaScript 엔진이 **자동으로** 타입을 변환하는 방식이다. 연산 및 조건식 등에서 피연산자의 타입이 일치하지 않을 때 타입이 변환된다.
 
 ```js
-"5" + 2; // "52"
-"hello" + 123; // "hello123"
+'5' + 2; // "52"
+'hello' + 123; // "hello123"
 `value: ${123}`; // "value: 123"
-5 == "5"; // true
+5 == '5'; // true
 ```
 
 이 중에서 오늘 살펴볼 부분은 `==`([loose equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality){:target="\_blank"}) 비교 연산자 사용 시 수행될 수 있는 [Abstract Equality Comparison](https://262.ecma-international.org/6.0/#sec-abstract-equality-comparison){:target="\_blank"} 섹션이다.
@@ -72,11 +72,11 @@ JSON.stringify(123);
 `===` 연산자가 동등성을 판단하는 과정에서 JavaScript 엔진은 두 피연산자의 데이터 타입이 상이할 때 `false` 데이터를 반환한다. 따라서 하단의 조건식들과 같이, 두 피연산자의 데이터 타입은 다르지만 `==` 연산자의 특징인 type coercion으로 인해 코드 작성자의 의도와 다르게 `true`로 평가되는 경우가 발생할 수 있다.
 
 ```js
-123 == "123"; // true
-123 === "123"; // false
+123 == '123'; // true
+123 === '123'; // false
 
-"" == 0; // true
-"" === 0; // false
+'' == 0; // true
+'' === 0; // false
 
 null == undefined; // true
 null === undefined; // false
@@ -87,24 +87,24 @@ null === undefined; // false
 ```js
 5 == 5;
 null == undefined;
-"5" == 5;
+'5' == 5;
 true == 1;
-"" == 0;
+'' == 0;
 
 // T, T, T, T
 
 [] == 0;
-[1, 2, 3] == "1,2,3";
-false == "0";
-({}) == "[object Object]";
+[1, 2, 3] == '1,2,3';
+false == '0';
+({}) == '[object Object]';
 [5] == 5;
 
 // T, T, T, T, T
 
 [] == ![];
-[] == "";
-true == "1";
-[1, 2] == "1,2";
+[] == '';
+true == '1';
+[1, 2] == '1,2';
 ({ valueOf: () => 10 }) == 10;
 
 // T, T, T, T, T
@@ -112,14 +112,14 @@ true == "1";
 null == 0;
 undefined == 0;
 NaN == NaN;
-({ toString: () => "5" }) == 5;
-Symbol("x") == Symbol("x");
+({ toString: () => '5' }) == 5;
+Symbol('x') == Symbol('x');
 
 // F, F, F, T, F
 
 [0] == false;
 [] == [];
-({ valueOf: () => 1, toString: () => "2" }) == 1;
+({ valueOf: () => 1, toString: () => '2' }) == 1;
 new Date(0) == 0;
 [[[0]]] == 0;
 

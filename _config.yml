@@ -2,9 +2,9 @@
 permalink: /:year-:month-:day/:title
 
 # Setup
-title: Yeolam Sung
-baseurl: ""
-url: "https://agetbase.com"
+title: Gyung Sung
+baseurl: ''
+url: 'https://agetbase.com'
 
 # Assets
 sass:

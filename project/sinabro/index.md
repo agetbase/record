@@ -1,5 +1,5 @@
 ---
-author: 'Yeolam Sung'
+author: 'Gyung Sung'
 title: 'Sinabro'
 subtitle: '지도 기반의 밀집도 관리 애플리케이션'
 type: 'Mobile application'

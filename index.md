@@ -3,8 +3,8 @@ layout: default
 # title: "성경 블로그"
 title: 'Record'
 main: true
-subtitle: Frontend agetbase Yeolam Sung
-description: Yeolam Sung, who is a fontend developer based in Seoul, South Korea. | '성경' 프론트엔드 개발자입니다.
+subtitle: Frontend agetbase Gyung Sung
+description: Gyung Sung, who is a fontend developer based in Seoul, South Korea. | '성경' 프론트엔드 개발자입니다.
 ---
 
 <div class="intro-animation">

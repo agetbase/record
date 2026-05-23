@@ -1,5 +1,5 @@
 ---
-author: 'Yeolam Sung'
+author: 'Gyung Sung'
 title: 'BUDDY'
 subtitle: '멀티 OTT 플랫폼 공동 구독 서비스'
 type: 'Web'

@@ -5,7 +5,7 @@ subtitle: 'Next.js로 만든 프로젝트를 어떻게 Google 검색에 노출�
 date: '2025년 1월 15일'
 blog: true
 text: true
-author: 'Yeolam Sung'
+author: 'Gyung Sung'
 post-header: true
 intro-img: 'nextjs-google-search-console/img/magnifier.png'
 header-img: 'img/magnifier.png'

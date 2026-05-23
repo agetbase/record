@@ -5,7 +5,7 @@ subtitle: '토스 채용 프로세스에서 진행했던 과제에 참여하고,
 date: '2025년 11월 26일'
 blog: true
 text: true
-author: 'Yeolam Sung'
+author: 'Gyung Sung'
 post-header: true
 intro-img: 'frontend-fundamentals-mock-exam-1/img/frontend-fundamental.png'
 header-img: 'img/frontend-fundamental.png'

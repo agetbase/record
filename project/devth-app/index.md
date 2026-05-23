@@ -1,5 +1,5 @@
 ---
-author: 'Yeolam Sung'
+author: 'Gyung Sung'
 title: 'Devth App'
 # link: 'https://swjudge.cbnu.ac.kr/'
 subtitle: 'AI·외부 프로그램 및 어뷰징 제한 평가용 데스크탑 애플리케이션'
