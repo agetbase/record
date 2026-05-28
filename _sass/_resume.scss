@@ -28,6 +28,8 @@ div.resume-info {
     border-top: 1px solid rgba(0, 0, 0, 0.07);
 
     .workplace-name {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
       font-family: $source;
       font-size: 20px;
       font-weight: 700;

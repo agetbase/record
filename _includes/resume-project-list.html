@@ -1,6 +1,12 @@
 <li class="workplace transition">
   {% for first in site.data.experience.first-place %}
-  <p class="workplace-name">{{ first.name }}</p>
+  <a
+    href="{{ first.url }}"
+    rel="noreferrer"
+    target="_blank"
+    class="workplace-name"
+    >{{ first.name }}</a
+  >
   <div class="work-info">
     <p>{{ first.role }}</p>
     <p class="work-sub-info">{{ first.date }}</p>

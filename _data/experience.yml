@@ -14,6 +14,7 @@
 
 first-place:
   - name: Goorm
+    url: https://goorm.co
     role: Full stack Engineer
     date: 2025.3 - Present
     skill_1: React.js
