@@ -199,7 +199,7 @@ export default function App() {
 
 <br />
 
-### 참조
+### 참고
 
 - [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/opacity#description){:target="\_blank"}
 - [Stacking context](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Positioned_layout/Stacking_context){:target="\_blank"}
