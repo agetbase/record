@@ -11,7 +11,6 @@ intro-img: "what-is-the-difference-between-figma-font-and-browser-font/img/latin
 header-img: "img/latin-letters.png"
 comments: true
 order: 12
-draft: true
 ---
 
 ## 작성 배경
