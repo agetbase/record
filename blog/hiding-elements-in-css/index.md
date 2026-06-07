@@ -1,14 +1,14 @@
 ---
 layout: post
-title: '브라우저 렌더링 관점에서 본 숨김 CSS 속성들의 차이'
-subtitle: 'CSS에서 요소를 숨기는 방법은 다양한데요. 성능적인 측면에서 각 속성이 가지는 장단점과, 언제 어떤 속성의 사용이 적절한지 실험해 본 내용을 공유합니다.'
-date: '2025년 3월 8일'
+title: "브라우저 렌더링 관점에서 본 숨김 CSS 속성들의 차이"
+subtitle: "CSS에서 요소를 숨기는 방법은 다양한데요. 성능적인 측면에서 각 속성이 가지는 장단점과, 언제 어떤 속성의 사용이 적절한지 실험해 본 내용을 공유합니다."
+date: "2025년 3월 8일"
 blog: true
 text: true
-author: 'Gyung Sung'
+author: "Gyung Sung"
 post-header: true
-intro-img: 'hiding-elements-in-css/img/hiding-eyes.png'
-header-img: 'img/hiding-eyes.png'
+intro-img: "hiding-elements-in-css/img/hiding-eyes.png"
+header-img: "img/hiding-eyes.png"
 comments: true
 order: 9
 ---
@@ -26,10 +26,10 @@ HTML에서 특정 요소(`element`)를 숨김 처리할 때 활용할 수 있는
 ![linkedin-post](img/preview_cra_page.png){: width="550"}
 
 ```jsx
-import { useState } from 'react';
-import clsx from 'clsx';
+import { useState } from "react";
+import clsx from "clsx";
 
-import './App.css';
+import "./App.css";
 
 const BUTTON_GROUP_COUNT = 10;
 
@@ -37,7 +37,7 @@ export default function App() {
   const [isButtonGroupHidden, setIsButtonGroupHidden] = useState(false);
 
   return (
-    <div className='App'>
+    <div className="App">
       <button
         onClick={() => {
           setIsButtonGroupHidden((prev) => !prev);
@@ -46,7 +46,7 @@ export default function App() {
         Toggle
       </button>
 
-      <div className={clsx('buttonGroup', { hidden: isButtonGroupHidden })}>
+      <div className={clsx("buttonGroup", { hidden: isButtonGroupHidden })}>
         {Array.from({ length: BUTTON_GROUP_COUNT }, (_, index) => (
           <button key={index}>{index + 1}</button>
         ))}
@@ -55,6 +55,8 @@ export default function App() {
   );
 }
 ```
+
+<br />
 
 ```css
 .App {
@@ -94,7 +96,7 @@ export default function App() {
 
 <br />
 
-## 방법(1) : `display: none`
+## 방법(1) : display: none
 
 `display: none` 속성이 `<div>` 요소에 적용되면 `Recalculate Style` 단계에서
 해당 스타일이 계산된다. 이 과정에서 요소는 **렌더 트리에서 제거**되며, 요소가 차지하던 공간이 사라지면서 **주변 요소들의 위치와 크기가 재계산**된다. 이러한 레이아웃 변경으로 인해 Layout(`Reflow`)이 발생하고,
@@ -108,7 +110,7 @@ export default function App() {
 
 <br />
 
-## 방법(2) : `visibility: hidden`
+## 방법(2) : visibility: hidden
 
 `visibility: hidden` 속성이 `<div>` 요소에 적용되면 `Recalculate Style` 단계에서
 해당 스타일이 계산된다. 이 과정에서 요소는 **렌더 트리에 유지**되지만 시각적으로만 숨김 처리되며, **요소가 차지하던 공간은 그대로 유지**된다. 주변 요소들의 위치나 크기에 영향을 주지 않기 때문에 Layout(`Reflow`)은 발생하지 않고, 요소를 화면에 그리지 않기 위한 Paint(`Repaint`) 단계만 실행된다.
@@ -121,7 +123,7 @@ export default function App() {
 
 <br />
 
-## 방법(3) : `opacity: 0`
+## 방법(3) : opacity: 0
 
 이 방법은 `opacity: 0` 속성을 적용할 요소의 기설정 값에 따라 2가지 결과가 나타난다.
 
@@ -152,7 +154,7 @@ export default function App() {
 
 <br />
 
-## 방법(4) : `transform: scale(0)`
+## 방법(4) : transform: scale(0)
 
 이 방법도 `transform: scale(0)` 속성을 적용할 요소의 기설정 값에 따라 2가지 결과가 나타난다.
 

@@ -4,12 +4,21 @@
 // }
 
 code {
-  background-color: rgba(129, 139, 152, 0.12); // GitHub 스타일 배경색
-  border-radius: 4px; // 약간 둥근 모서리
-  color: #24292e; // 기본 텍스트 색상
-  font-size: 85%; // 약간 작은 폰트 크기
-  font-weight: 500;
-  padding: 0.2em 0.4em; // 안쪽 여백
+  display: inline-flex;
+  padding: 2px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  border: none;
+  cursor: default;
+  pointer-events: none;
+  background: #f2f4f6;
+  color: #6b7684;
 }
 
 // pre {
@@ -17,11 +26,7 @@ code {
 // }
 
 pre code {
-  background-color: rgba(129, 139, 152, 0.12); // pre 내부에서 투명 처리
-  color: inherit;
-  font-size: 100%; // 기본 폰트 크기
-  padding: 0;
-  font-size: 16px; // 가독성을 위한 크기
+  padding: 10px;
 }
 
 .rouge-table {
