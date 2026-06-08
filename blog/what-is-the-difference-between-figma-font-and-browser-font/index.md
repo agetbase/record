@@ -21,6 +21,8 @@ order: 12
 
 <figcaption>font-weight가 다르게 보임</figcaption>
 
+이 때문에 디자인 QA 간에 `font-weight` 값을 빈번히 브라우저에서 확인하던 번거로움을 없애기 위해 차이가 발생하는 원인과 해결 방법을 조사
+
 <br />
 
 ## 원인
