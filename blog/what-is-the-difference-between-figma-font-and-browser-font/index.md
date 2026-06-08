@@ -191,18 +191,40 @@ Figma의 canvas 영역에 렌더링되는 폰트는 기본적으로 AA가 적용
 가장 중요한 해결 방법은 [CSS 속성](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-smooth#examples){:target="\_blank"}으로 폰트 차이를 거의 해소할 수 있다. Windows는 기본 상태로도 큰 차이가 거의 없었으니 생략하고, macOS의 경우만 살펴보자.
 
 ```css
-.temp-text {
+body {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 ```
 
 <br />
 
-위 속성 적용을 통해 AA가 적용되어 있던 Figma와 브라우저에서 렌더링된 폰트 간의 차이를 해소할 수 있다. MDN의 CSS Property Note에 의하면, 하단의 이미지 같이 Firefox 브라우저에서는 `-moz-osx-font-smoothing: grayscale;` 속성을 적용하는 것이라 기재되어 있지만, 실제 macOS 내 Firefox 브라우저에서 확인해 본 결과 `-moz-osx-font-smoothing` 속성으로는 차이가 나타나지 않았고, `-webkit-font-smoothing` 속성의 영향을 받는 것으로 확인했기 때문에 moz-osx 속성은 당장은 굳이 포함시킬 필요는 없을 것 같다.
+위 속성 적용을 통해 AA가 적용되어 있던 Figma와 브라우저에서 렌더링된 폰트 간의 차이를 일부 해소할 수 있다. MDN의 CSS Property Note에 의하면, 하단의 이미지 같이 macOS의 Firefox 브라우저에서는 `-moz-osx-font-smoothing: grayscale;` 속성을 사용하길 권하는 것으로 보이지만, 실제 확인 결과 `-webkit-font-smoothing` 속성만으로도 Firefox에서 동일한 AA 적용 상태를 확인할 수 있었다.
 
 ![font-smoothing](img/font-smoothing.png){: width="750"}
 
 ![after-adjust-font-smoothing](img/after-adjust-font-smoothing.gif){: width="550"}
+
+그러나, `-moz-` 접두사는 Firefox을 위한 속성이므로 되도록 `-webkit-font-smoothing`만 사용하기 보다는 `-moz-osx-font-smoothing` 속성을 함께 포함해 주는 것이 올바른
+사용 방법이 될 것 같다.
+
+추가로, 두 속성을 함께 포함해 줌으로써 기기별 브라우저 호환 범위 측면에서도 가장 이점이 크다.
+
+![css-cascade](img/css-cascade.png){: width="300"}
+
+![only-webkit](img/only-webkit.png){: width="350"}
+
+<figcaption>-webkit-font-smoothing 속성만 적용했을 땐 Firefox 150 버전의 Desktop/Mobile 호환 불가</figcaption>
+
+![only-moz](img/only-moz.png){: width="350"}
+
+<figcaption>-moz-osx-font-smoothing 속성만 적용했을 땐 Chrome 148 버전의 Desktop/Mobile, Edge 148 버전의 Desktop, Firefox 150 버전의 Mobile, Safari 26.5 버전의 Desktop/Mobile 호환 불가</figcaption>
+
+![only-moz](img/include-both-font-smoothing.png){: width="350"}
+
+<figcaption>-webkit-font-smoothing, -moz-osx-font-smoothing 두 속성을 모두 적용했을 땐 Firefox 150 버전의 Mobile 호환 불가</figcaption>
+
+현재를 기준으로 해당 속성은 Non-standard 상태이므로 추후 사용 방법이 달라질 가능성이 있으니 사용에 유의해야 할 것 같다.
 
 <br />
 
@@ -213,6 +235,8 @@ Figma의 canvas 영역에 렌더링되는 폰트는 기본적으로 AA가 적용
 Windows는 다양한 하드웨어 환경에서 일관된 가독성을 제공하는 방향으로 발전해 왔으며, Apple은 자사 디바이스의 고해상도 디스플레이 환경에 맞추어 폰트 렌더링 방식을 변화시킨 것으로 보인다.
 
 기업의 기술 적용 방식은 당연하겠지만 그 제품에 확실히 의존되는 것 같다. 그러나, 사용자마다 다양한 기기를 통해 제품을 경험할 수 있는 제품을 개발하고 있다면 일관된 사용자 경험을 제공하는 것도 반드시 고려해야 한다고 생각한다.
+
+현재 조직의 제품 코드에서는 해당 속성을 초기 도입 시 다양한 환경별 폰트 차이들을 한 번에 보여드리기 어려워 모노레포의 일부 리액트 앱들에 한해 적용하는 것에서 그쳤지만, 이제는 본 게시글을 통해 전역 앱 속성으로써 포함시켜도 될 증좌를 만들게 된 것 같다.
 
 <span class="highlight-text">**제품 엔지니어는 코드를 잘 작성하는 것에 더해 실제 사용자 시각에서 제품을 바라보고, 사고하는 과정이 개발 간에 포함돼야 제품의 가치를 진정 높일 수 있을 것이다.**</span>
 
