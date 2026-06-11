@@ -5,7 +5,7 @@ subtitle: "포커스 링, 없애도 될까요? 브라우저의 판단 기준에 
 date: "2025년 3월 18일"
 blog: true
 text: true
-author: "Yeolam Sung"
+author: "Gyung Sung"
 post-header: true
 intro-img: "difference-between-focus-and-focus-visible/img/globe.png"
 header-img: "img/globe.png"
