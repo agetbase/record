@@ -1,5 +1,5 @@
 * {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .container {
@@ -17,7 +17,7 @@ footer > .footer_wrap,
 .nav-container {
   margin: 0 auto;
   max-width: 720px;
-  font-weight: 600;
+  font-weight: 400;
   width: 80%;
   @media (max-width: $break-small) {
     width: 88%;
@@ -58,6 +58,11 @@ ul {
 }
 
 .nav-container {
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
   li {
     font-family: $source;
     display: inline-block;
@@ -72,27 +77,35 @@ ul {
       font-size: 16px;
     }
   }
-  li:hover {
+
+  li:not(.home-li):hover {
     opacity: 0.5;
   }
 }
 
 .active {
-  font-weight: 800;
-  padding-bottom: 1px;
-  border-bottom: 2px solid black;
-
+  font-weight: 700;
   color: $grey-0;
 }
 
 .normal {
-  // font-weight: 900;
-  // border-style: none;
-  // padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  gap: 0.1875rem;
+  font-weight: 800;
+
+  & > span {
+    font-size: 16px;
+  }
 }
 
 a {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 //footer

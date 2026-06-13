@@ -1,69 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    
   {% include head.html %}
 
   <head>
     <!-- Rouge GitHub CSS 파일 로드 -->
-    <link rel="stylesheet" href="{{ '/assets/css/rouge-github.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/rouge-github.css' | relative_url }}" />
   </head>
 
   <body>
-      {% assign current = page.url | downcase | split: '/' %}
-      <nav class="nav">
-        <div class="nav-container">
-            <ul>
-                <li class="transition">
-                    <a href="{{ '' | prepend: site.baseurl }}/" {% if current[1] == "about" or current[1] == "blog" or current[1] == "project" %} class="normal" {% endif %} class="active">Home</a>
-                </li>
-                <li class="transition">
-                    <a href="{{ '/project' | prepend: site.baseurl }}" {% if current[1] == "project" %} class="active"{% endif %} >Project</a>
-                </li>
-                <li class="transition">
-                    <a href="{{ '/blog' | prepend: site.baseurl }}" {% if current[1] == "blog" %} class="active"{% endif %} >Blog</a>
-                </li>
-            </ul>
-        </div>
-      </nav>
-    
-    {% if page.post-header == true %}
-        {% include post-header.html %}
-    {% endif %}
-      
+    {% assign current = page.url | downcase | split: '/' %}
+    <nav class="nav">
+      <div class="nav-container">
+        <ul>
+          <li class="home-li">
+            <a href="{{ '' | prepend: site.baseurl }}/" {% if current[1] == "about" or current[1] == "blog" or current[1] == "project" %} class="home" {% endif %} class="home">
+              <img src="/assets/img/logo_origin.png" width=23 />
+              <span>Record</span>
+            </a>
+          </li>
+          <li class="transition">
+            <a href="{{ '/project' | prepend: site.baseurl }}" {% if current[1] == "project" %} class="active" {% endif %}>프로젝트</a>
+          </li>
+          <li class="transition">
+            <a href="{{ '/blog' | prepend: site.baseurl }}" {% if current[1] == "blog" %} class="active" {% endif %}>블로그</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    {% if page.post-header == true %} {% include post-header.html %} {% endif %}
+
     <main>
       {{ content }}
-        {% if page.comments %} 
-        <script src="https://giscus.app/client.js"
-            data-repo="agetbase/record"
-            data-repo-id="R_kgDOJ2muLQ"
-            data-category="General"
-            data-category-id="DIC_kwDOJ2muLc4Cl9XO"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="preferred_color_scheme"
-            data-lang="ko"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-        </script>
-       {% endif %}
+      {% if page.comments %}
+      <script
+        src="https://giscus.app/client.js"
+        data-repo="agetbase/record"
+        data-repo-id="R_kgDOJ2muLQ"
+        data-category="General"
+        data-category-id="DIC_kwDOJ2muLc4Cl9XO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="ko"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async
+      ></script>
+      {% endif %}
 
-        <!-- {% if page.comments %} {% include disqus.html %} {% endif %} -->
+      <!-- {% if page.comments %} {% include disqus.html %} {% endif %} -->
 
       {% if current[1] == "blog" %}
-      <p class="toss-copyright">이 페이지에는 토스팀에서 제공한 <a target="_blank" href="https://toss.im/tossface">토스페이스</a>가 적용되어 있습니다.</p>
+      <p class="toss-copyright">
+        이 페이지에는 토스팀에서 제공한
+        <a target="_blank" href="https://toss.im/tossface">토스페이스</a>가
+        적용되어 있습니다.
+      </p>
       {% endif %}
     </main>
-      
+
     {% include footer.html %}
-    
-   
   </body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSC9VLZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-MSC9VLZ"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 </html>
