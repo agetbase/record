@@ -164,4 +164,4 @@ Windows를 오랜 시간 사용해 오던 사용자라면, 문서 작성 간에 
 
 ### 참고
 
-- [contentEditable](https://developer.mozilla.org/ko/docs/Web/HTML/Reference/Global_attributes/contenteditable)
+- [contentEditable](https://developer.mozilla.org/ko/docs/Web/HTML/Reference/Global_attributes/contenteditable){:target="\_blank"}
