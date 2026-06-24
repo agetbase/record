@@ -41,12 +41,35 @@ $break-small: 670px;
 
 // font-family 정의
 $serif: "Nanum Myeongjo", sans-serif;
-$source: "Toss Product Sans", "Tossface", -apple-system, BlinkMacSystemFont,
-  "Apple SD Gothic Neo", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
-  "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-  sans-serif, "Source Sans Pro", sans-serif;
-$custom-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$source:
+  "Toss Product Sans",
+  "Tossface",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Apple SD Gothic Neo",
+  Pretendard,
+  Roboto,
+  "Noto Sans KR",
+  "Segoe UI",
+  "Malgun Gothic",
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  sans-serif,
+  "Source Sans Pro",
+  sans-serif;
+$custom-font:
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  "Open Sans",
+  "Helvetica Neue",
+  sans-serif;
 
 $monospaced-font: Menlo, Monaco, monospace;
 $code-color: #bf616a;
