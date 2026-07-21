@@ -13,5 +13,3 @@ comments: true
 order: 15
 draft: true
 ---
-
-## 작성 배경
