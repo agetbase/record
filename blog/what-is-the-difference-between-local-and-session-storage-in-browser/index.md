@@ -17,6 +17,8 @@ order: 15
 
 머릿속에만 두면 나중에 필요할 때 꼭 한 번씩 잊어버리는 문제가 있어서 나중에 쉽게 찾아보기 위해 글로써 기록해 두기로 했다. 요즘 같은 세상에 AI로 검색하면 수 초 내로 알 수 있는 내용이지만, 직접 사실 검증을 거치지 않으면 신뢰할 수 없고, 내 것이 되지 않는다는 생각이다.
 
+<br />
+
 ## Web Storage API
 
 [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API){:target="\blank"}는 브라우저에 key-value 쌍을 저장하는 인터페이스다. 쿠키보다 직관적으로 값을 넣고 꺼낼 수 있으며, `window.localStorage`와 `window.sessionStorage`로 각각의 `Storage` 객체에 접근한다. 두 저장소는 origin마다 공간이 나뉘고, 서로 다른 객체를 쓰기 때문에 한쪽을 지워도 다른 쪽은 그대로다. 읽고 쓰는 동작은 동기적이라, 데이터가 많으면 그동안 다른 스크립트가 멈출 수 있다.
